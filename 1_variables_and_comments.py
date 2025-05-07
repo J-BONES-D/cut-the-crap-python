@@ -1,5 +1,5 @@
 """
-This is what is called a 'string literal'. because it is a string that is
+This is what is called a 'string literal'. Because it is a string that is
 unassigned. Unassigned string literals can be used for multiline comments.
 String literals are ignored by the Python Interpreter. A string literal is
 surrounded by triple, single or triple double, quotes.
