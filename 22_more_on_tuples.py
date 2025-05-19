@@ -82,3 +82,112 @@ print()
 ####################################################################
 # unpacking tuples:
 ####################################################################
+''' when you put items into a tuple, you are packing the tuple... '''
+
+# pack a tuple:
+grades = ("freshman", "sophmore", "junior", "senior")
+
+# unpack a tuple: ''' extract items in a tuple into variables '''
+#################################################################
+(ninth, tenth, eleventh, twelveth) = grades
+
+print(ninth)
+print(tenth)
+print(eleventh)
+print(twelveth)
+
+print()
+
+# unpacking a tuple using the asterisk * :
+##########################################
+''' if the number variables being assigned is less than
+number of the items in the tuple, add a preceding '*' to
+the variable being assigned and the overloaded items
+will be assigned to that vaiable as a list.
+'''
+# create a tuple:
+fruits = ("grape", "banana", "cherry", "strawberry", "raspberry")
+
+(green, yellow, *red) = fruits
+
+print(green, yellow, red)
+print()
+
+
+# create another tuple:
+more_fruits = ("grape", "mango", "papaya", "pineapple", "cherry")
+
+(green, *tropical, red) = fruits
+
+print(green)
+print(tropical)
+print(red)
+
+print()
+
+
+######################
+# loop through tuples:
+######################
+
+# use a for loop:
+for x in fruits:
+    print(x)
+
+print()
+
+for x in range(len(more_fruits)):
+    print(more_fruits[x])
+
+print()
+
+
+# use a while loop:
+counter = 0
+
+while counter < len(more_fruits):
+    ele = more_fruits[counter]
+    print(ele + " is delicious!")
+    counter += 1
+
+print()
+
+
+##################################
+# join tuples:
+##################################
+
+# use concatenation:
+all_fruits = fruits + more_fruits
+print(all_fruits)
+
+print()
+
+# use replication:
+two_fruits = fruits * 2
+print(two_fruits)
+
+print()
+
+
+####################################################
+# some tuple methods:
+####################################################
+""" Tuples are immutable, so methods like append(), extend(), insert(), remove(), or pop() won't work. """
+''' convert to a list remember... '''
+
+# use the count() method:
+''' returns the number of times an item occurs in a tuple '''
+print("'grape' occurs in the two_fruits tuple", two_fruits.count("grape"), "times...")
+print()
+
+
+# use the index() method:
+''' returns the index location of the first occurrence of an item in a tuple. '''
+print(all_fruits.index("grape"))    # returns '0'
+print()
+
+""" research tuple methods for more... """
+
+print("Next up on the set is 'Sets'")
+print()
